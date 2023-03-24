@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="header.css" />
+
+        <title>Aileen</title>
+    </head>
+    <body>
+        <!-- header starts here -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.svg" alt="" />
+                    </a>
+                    <a
+                        class="navbar-brand fw-bolder"
+                        style="
+                            color: #ff5b00;
+                            font-size: 26px !important;
+                            margin: 0 20px 0px -90px;
+                        "
+                        href="#"
+                        >Aileen</a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-main"
+                        aria-controls="navbar-main"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-main">
+                        <div class="input-group" id="search-container">
+                            <button type="button" id="search-btn">
+                                <img
+                                    src="./images/magnifying-glass-solid.svg"
+                                    alt=""
+                                />
+                            </button>
+                            <input
+                                type="text"
+                                placeholder="Search destinations or activities"
+                            />
+                        </div>
+
+                        <ul
+                            class="navbar-nav ms-auto mb-2 mb-lg-0"
+                            id="header-nav-menu"
+                        >
+                            <li class="nav-item dropdown">
+                                <a
+                                    id="flag"
+                                    class="nav-link text-dark dropdown-toggle"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <svg
+                                        viewBox="0 0 240 160"
+                                        width="22"
+                                        height="22"
+                                    >
+                                        <path
+                                            fill="#00008B"
+                                            d="M0 0h240v160H0V0z"
+                                        ></path>
+                                        <path
+                                            fill="#FFF"
+                                            d="M78.7 124l-12 1 1.7 12-8.3-8.8-8.3 8.8 1.7-12-12-1 10.4-6.2-6.9-10 11.3 4.3 3.7-11.5 3.7 11.5 11.3-4.3-6.7 10.1 10.4 6.1zM70 24.4V0H50v24.4L13.4 0H0v8.9l26.6 17.7H0v26.7h26.6L0 71.1V80h13.4L50 55.6V80h20V55.6L106.6 80H120v-8.9L93.4 53.3H120V26.7H93.4L120 8.9V0h-13.4L70 24.4zM153.7 71l3.2-4.8-5.4 2-1.8-5.5-1.8 5.5-5.4-2 3.2 4.8-5 2.9 5.7.5-.8 5.7 4-4.2 4 4.2-.8-5.7 5.7-.5-4.8-2.9zm32 50.6l3.2-4.8-5.4 2-1.8-5.5-1.8 5.5-5.4-2 3.2 4.8-5 2.9 5.7.5-.8 5.7 4-4.2 4 4.2-.8-5.7 5.7-.5-4.8-2.9zm-7.1-81.8l-.8 5.7 4-4.2 4 4.2-.8-5.7 5.7-.5-5-2.9 3.2-4.8-5.4 2-1.8-5.5-1.8 5.5-5.4-2 3.2 4.8-5 2.9 5.9.5zM196 83.3l-1.4-3.4-1.4 3.4-3.7.3 2.8 2.4-.9 3.6 3.1-1.9 3.1 1.9-.9-3.6 2.8-2.4-3.5-.3zm23.1-17.9l-5-2.9 3.2-4.8-5.4 2-1.8-5.5-1.8 5.5-5.4-2 3.2 4.8-5 2.9 5.7.5-.8 5.7 4-4.2 4 4.2-.8-5.7 5.9-.5z"
+                                        ></path>
+                                        <path
+                                            fill="red"
+                                            d="M54 0h12v32h54v16H66v32H54V48H0V32h54V0zM0 0l40 26.7h-8.9L0 6V0zm120 0h-8.9l-40 26.7H80L120 0zm0 80L80 53.3h8.9L120 74v6zM0 80h8.9l40-26.7H40L0 80z"
+                                        ></path>
+                                        <path
+                                            stroke="#e0e0e0"
+                                            fill="none"
+                                            d="M0 0h120v80H0z"
+                                        ></path>
+                                    </svg>
+                                </a>
+                                <ul
+                                    aria-labelledby="flag"
+                                    class="dropdown-menu"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link text-dark dropdown-toggle"
+                                    id="aud"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    AUD
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="aud">
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >Go to app</a
+                                >
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" href="#"
+                                    >Sign up</a
+                                >
+                            </li>
+                            <li class="nav-item" id="log-in">
+                                <a class="nav-link fw-bold" href="#">Log in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="hr-one"></div>
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#second-navbar"
+                        aria-controls="second-navbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="second-navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >Explore destinations</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >All categories</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >Things to do</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >Places to stay</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >Transport</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Cars</a>
+                            </li>
+                            <li class="nav-item" id="dot-nav">
+                                <a class="nav-link text-dark" href="#">...</a>
+                            </li>
+                            <div id="dot-border"></div>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >Klook Pass</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >Gift cards</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#"
+                                    >Travel insurance</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- slider -->
+            <div id="slider-container">
+                <div id="slider-header">
+                    <h1 class="fw-bolder" style="font-size: 50px">
+                        Your World of Joy
+                    </h1>
+                    <p class="fs-5 fw-bold">
+                        From local escapes to far-flung adventures, find what
+                        makes you happy anytime, anywhere
+                    </p>
+                    <div id="search-container2">
+                        <form>
+                            <img
+                                src="./images/magnifying-glass-solid.svg"
+                                alt=""
+                            />
+                            <input type="search" placeholder="Search" />
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div
+                    id="img-slider"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    style="height: 500px"
+                >
+                    <div class="carousel-inner h-100">
+                        <div
+                            class="carousel-item active"
+                            data-bs-interval="5000"
+                        >
+                            <img
+                                src="./images/gallery-1-thumb.jpg"
+                                class="d-block w-100 h-100"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img
+                                src="./images/gallery-2.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="./images/gallery-6.jpg"
+                                class="d-block w-100 h-100"
+                                alt="..."
+                            />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#img-slider"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#img-slider"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- header ends here -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
