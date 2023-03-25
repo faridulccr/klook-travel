@@ -2,6 +2,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    min-width: 1250px;
+    margin: 0 auto;
 }
 
 #navbar-main a {
@@ -9,18 +11,18 @@ body {
     font-weight: 500;
 }
 
-#navbar-main #search-btn {
+#brand-container #search-btn {
     border: none;
     width: 30px;
     background: transparent;
     z-index: 100;
 }
 
-#navbar-main #search-container {
+#brand-container #search-container {
     width: fit-content;
 }
 
-#navbar-main #search-container input {
+#brand-container #search-container input {
     border: none;
     width: 350px;
     padding: 6px 10px 6px 45px;
@@ -30,14 +32,14 @@ body {
     margin-left: -40px;
     border: 1px solid rgba(0, 0, 0, 0.01);
 }
-#navbar-main #search-container input:focus,
-#navbar-main #search-container input:active {
+#brand-container #search-container input:focus,
+#brand-container #search-container input:active {
     border: 1px solid #ff5b00 !important;
     outline: none !important;
     caret-color: #ff5b00;
     background-color: white;
 }
-#navbar-main #search-container input:hover {
+#brand-container #search-container input:hover {
     border: 1px solid #ff5b00;
 }
 
@@ -65,27 +67,23 @@ header #hr-one {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header #second-navbar .navbar-nav {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-header #second-navbar .navbar-nav .nav-item {
+header #second-navbar #navbar-nav .nav-item {
     border-radius: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 5px;
 }
-header #second-navbar .navbar-nav .nav-item:hover {
+header #second-navbar #navbar-nav .nav-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
-
+header #second-navbar #navbar-nav a {
+    font-size: 14px;
+}
 header #second-navbar #dot-nav a {
     font-weight: 900;
     padding-bottom: 12px;
     letter-spacing: 3px;
 }
 header #second-navbar #dot-border {
-    height: 20px;
+    height: 40px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     width: 1px;
 }
