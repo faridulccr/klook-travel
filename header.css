@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 body {
-    font-family: "Poppins", sans-serif;
-    min-width: 1300px;
-    max-width: 1400;
+    font-family: "Poppins", sans-serif !important;
+    min-width: 1350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+.header-container {
+    width: 1160px;
     margin: 0 auto;
 }
 
@@ -11,27 +18,36 @@ body {
     font-size: 13px !important;
     font-weight: 500;
 }
-
+#brand-container #logo {
+    width: 215px;
+    height: 37px;
+}
 #brand-container #search-btn {
     border: none;
-    width: 30px;
+    display: flex;
+    align-items: center;
+    width: 27px;
+    height: 40px;
     background: transparent;
     z-index: 100;
+    margin-right: -35px;
 }
 
 #brand-container #search-container {
-    width: fit-content;
+    position: relative;
 }
-
 #brand-container #search-container input {
     border: none;
-    width: 350px;
-    padding: 6px 10px 6px 45px;
+    color: rgb(33, 33, 33);
+    width: 300px;
+    height: 40px;
+    padding: 0 0 0 40px;
+    font-size: 14px;
+    font-weight: 400;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #f5f5f5;
     transition: 0, 3s;
-    margin-left: -40px;
-    border: 1px solid rgba(0, 0, 0, 0.01);
+    border: 1px solid #f5f5f5;
 }
 #brand-container #search-container input:focus,
 #brand-container #search-container input:active {
@@ -43,25 +59,145 @@ body {
 #brand-container #search-container input:hover {
     border: 1px solid #ff5b00;
 }
+.focus-searching {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    background-color: #fff;
+    color: rgb(33, 33, 33);
+    padding: 20px;
+    width: 800px;
+    height: 540px;
+    overscroll-behavior: contain;
+    border-radius: 10px !important;
+    overflow-y: auto;
+    z-index: 9999;
+    overflow-y: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.03),
+        -3px -3px 10px rgba(0, 0, 0, 0.03);
+}
+.focus-searching .popular-search-keyword .keyword {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    background-color: rgb(245, 245, 245);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 10px 5px 0;
+    padding: 8px 10px;
+    border-radius: 1584px;
+}
+.focus-searching .popular-search-place {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+.focus-searching .popular-search-place img {
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+}
+.popular-search-place .place-with-img {
+    margin-bottom: 20px;
+}
+.popular-search-place .place-with-img .number-position {
+    position: relative;
+}
+.place-with-img .number-position .number-sec {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./images/numberImage.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    color: #fff;
+    width: 16px;
+    height: 24px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    border-top-left-radius: 8px;
+}
+.number-position .number-sec.more-than-3 {
+    background-image: url(./images/numberImageDark.png);
+}
+.focus-searching .bestsellers,
+.focus-searching .reopened {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.focus-searching .bestseller-title,
+.focus-searching .reopened-title {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 15px 15px;
+    padding-top: 30px;
+    color: rgb(33, 33, 33);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(255, 234, 227),
+        rgba(255, 234, 227, 0.6),
+        rgba(255, 234, 227, 0.4),
+        rgba(255, 234, 227, 0.2),
+        rgba(255, 234, 227, 0.05)
+    );
+}
+.popular-search-place .place-with-img {
+    text-decoration: none;
+    color: #333333;
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    column-gap: 15px;
+}
+.place-with-img .demand-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.place-with-img .demand-container .webkit {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(138, 138, 138);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+#brand-container #search-container input:focus + #search-focused {
+    display: block;
+}
 
-#header-nav-menu .nav-item {
-    margin: 0 5px;
-    padding: 0 5px;
+#header-nav-menu > .nav-item {
     border-radius: 20px;
 }
+#header-nav-menu > .nav-item > a {
+    padding: 8px 10px !important;
+}
+
+#header-nav-menu > .nav-item a {
+    font-size: 12px !important;
+    color: #333333;
+}
+
 #header-nav-menu .nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #f5f5f5;
+}
+#header-nav-menu #log-in:hover {
+    background-color: #fff;
 }
 #header-nav-menu #log-in .nav-link {
-    color: white;
+    color: white !important;
     width: fit-content;
     background-color: #ff5b00;
     border-radius: 20px;
+    margin-left: 10px;
     padding-left: 12px;
     padding-right: 12px;
-}
-#header-nav-menu #log-in:hover {
-    background-color: white;
 }
 header #hr-one {
     margin-top: -2px;
@@ -70,14 +206,16 @@ header #hr-one {
 
 header #second-navbar #navbar-nav .nav-item {
     border-radius: 20px;
-    padding: 0 5px;
+    padding: 0 !important;
 }
 header #second-navbar #navbar-nav .nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: #f5f5f5;
 }
-header #second-navbar #navbar-nav a {
-    font-size: 14px;
+header #second-navbar > #navbar-nav > li > a {
+    font-size: 14px !important;
+    color: #212121 !important;
     font-weight: 500;
+    font-family: "Poppins", sans-serif !important;
 }
 header #second-navbar #dot-nav #dot {
     font-weight: 900;
@@ -172,15 +310,23 @@ header #slider-container #slider-header {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
 }
-#language-dropdown #language-container a {
-    font-size: 13px;
+#language-dropdown #language-container li,
+#currency-dropdown #currency-container li {
+    margin: 4px 0;
+}
+#language-dropdown #language-container li:hover a,
+#currency-dropdown #currency-container li:hover a {
+    background-color: #f5f5f5;
 }
 #language-dropdown #language-container .active,
 #currency-dropdown #currency-container .active {
     background-color: #fff;
     color: #ff5b00;
 }
-
+#language-dropdown #language-container .active:hover,
+#currency-dropdown #currency-container .active:hover {
+    background-color: #f5f5f5;
+}
 #language-container .dropdown-item img {
     width: 22px;
     height: 22px;
@@ -237,6 +383,7 @@ header #slider-container #slider-header {
 .common-dropdown ul li a {
     font-size: 16px !important;
     font-weight: 400 !important;
+    color: rgb(33, 33, 33) !important;
 }
 .common-dropdown ul li a:hover {
     color: #ff5b00 !important;
@@ -303,6 +450,7 @@ header #slider-container #slider-header {
 #all-categories #all-categories-container .common-dropdown {
     display: block;
     box-shadow: none;
+    padding: 0;
 }
 #all-categories #all-categories-container {
     display: none;
@@ -310,7 +458,7 @@ header #slider-container #slider-header {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 1157px;
+    width: 1077px;
     border-radius: 10px;
     z-index: 999;
     background-color: #fff;
@@ -336,12 +484,8 @@ header #slider-container #slider-header {
     padding-left: 20px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-#all-categories
-    #all-categories-container
-    #list-container
-    .categories
-    .common-dropdown {
-    padding: 0;
+#list-container .categories .common-dropdown a {
+    padding-right: 0;
 }
 #all-categories:hover #all-categories-container {
     display: block;
@@ -352,8 +496,8 @@ header #slider-container #slider-header {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 1000px;
-    height: 500px;
+    width: 860px;
+    height: 487px;
     background-color: #fff;
     z-index: 999;
     border-radius: 10px;
@@ -372,6 +516,7 @@ header #slider-container #slider-header {
 }
 #destination-list #destination-container .place-name.active {
     background-color: #ff5b00;
+    color: #fff;
 }
 #destination-list #destination-container .place-name:hover .des-tooltip,
 #destination-list #destination-container .place-name.active .des-tooltip {
@@ -384,7 +529,8 @@ header #slider-container #slider-header {
     transform: translate(50%, -50%) rotate(45deg);
 }
 #destination-container .place-name h6 {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
 }
 #destination-container .place-name p {
     font-size: 12px;
@@ -392,6 +538,7 @@ header #slider-container #slider-header {
 }
 #destination-list #destination-container .place-name:hover {
     background-color: #ff5b00;
+    color: #fff;
 }
 #destination-list #destination-container .place-name:first-of-type {
     border-top-left-radius: 10px;
@@ -408,20 +555,18 @@ header #slider-container #slider-header {
 #destination-links #popular-destinations-link #country-link-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 14px;
+    row-gap: 16px;
 }
 #destination-links
     #popular-destinations-link
     #country-link-container
     .country-link {
     position: relative;
+    width: 130px;
+    height: 80px;
 }
-#destination-links
-    #popular-destinations-link
-    #country-link-container
-    .country-link
-    img {
+#popular-destinations-link #country-link-container .country-link img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -432,6 +577,8 @@ header #slider-container #slider-header {
     .country-link
     p {
     position: absolute;
+    font-size: 14px;
+    font-weight: 400;
     color: white;
     top: 100%;
     transform: translate(0, -115%);
@@ -451,13 +598,13 @@ header #slider-container #slider-header {
 }
 #destination-links .des-place .link-container a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.6) !important;
-    font-size: 16px !important;
-    font-weight: 700 !important;
+    color: rgb(51, 51, 51) !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
 }
 #destination-links .des-place .link-container .all-links a {
     margin: 8px 30px 8px 0;
-    color: rgba(0, 0, 0, 0.4) !important;
+    font-weight: 500 !important;
     display: inline-block;
 }
 #destination-links .des-place .link-container a:hover {

@@ -19,25 +19,25 @@
     <body>
         <!-- header starts here -->
         <header>
-            <nav class="navbar">
+            <nav class="header-container navbar">
                 <div class="container-fluid">
-                    <div class="d-flex" id="brand-container">
+                    <div class="d-flex position-relative" id="brand-container">
                         <a class="navbar-brand" href="#">
-                            <img src="./images/logo.svg" alt="" />
+                            <img src="./images/logo.svg" alt="" id="logo"/>
                         </a>
                         <a
-                            class="navbar-brand fw-bolder"
+                            class="navbar-brand fw-bolder position-absolute"
                             style="
                                 color: #ff5b00;
-                                font-size: 26px !important;
-                                margin: 0 20px 0px -90px;
+                                font-size: 25px !important;
+                                left: 58px;
                             "
                             href="#"
                             >Aileen</a
                         >
                         <div class="input-group" id="search-container">
                             <button type="button" id="search-btn">
-                                <img
+                                <img class="w-100 h-100"
                                     src="./images/magnifying-glass-solid.svg"
                                     alt=""
                                 />
@@ -46,6 +46,438 @@
                                 type="text"
                                 placeholder="Search destinations or activities"
                             />
+                            <div class="focus-searching" id="search-focused">
+                                <h5
+                                    class="pt-2"
+                                    style="font-size: 16px; font-weight: 600"
+                                >
+                                    Most popular
+                                </h5>
+                                <div class="popular-search-keyword">
+                                    <a class="keyword" href="#">dubai</a>
+                                    <a class="keyword" href="#">safari world bangkok</a>
+                                    <a class="keyword" href="#">thailand</a>
+                                    <a class="keyword" href="#">safari world bangkok</a>
+                                    <a class="keyword" href="#">halong bay</a>
+                                    <!-- <a class="keyword" href="#"></a> -->
+                                </div>
+                                <div class="popular-search-place">
+                                    <div class="bestsellers">
+                                        <h6 class="bestseller-title">
+                                            Bestsellers
+                                        </h6>
+                                        <div style="padding: 0 20px">
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec">
+                                                        1
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec">
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><span style="font-weight: 400;">From</span> <strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec">
+                                                        3
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        4
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><span style="font-weight: 400;">From</span> <strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        5
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><span style="font-weight: 400;">From</span> <strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        6
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><span style="font-weight: 400;">From</span> <strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        7
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><span style="font-weight: 400;">From</span> <strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        8
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><span style="font-weight: 400;">From</span> <strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        9
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><span style="font-weight: 400;">From</span> <strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        10
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:12px; font-weight: 500;">
+                                                        Tokyo Disney Resort Park
+                                                        Ticket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p style="font-size: 12px; font-weight: 400; color: rgb(138,138,138)">Attractions</p>
+                                                        <p style="font-size:12px;color:rgb(255,91,0)"><strong style="font-weight:600;">AUD 99.49</strong></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="reopened">
+                                        <h6 class="reopened-title">
+                                            Reopened destinations
+                                        </h6>
+                                        <div style="padding: 0 20px">
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec">
+                                                        1
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Tokyo
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec">
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Osaka
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec">
+                                                        3
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Singapore
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        4
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Seoul
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        5
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Bangkok
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        6
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Taipei
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        7
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Bali
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        8
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Kyoto
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        9
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Phuket
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="place-with-img">
+                                                <div class="number-position">
+                                                    <img
+                                                        src="./images/disney.jpg"
+                                                        alt=""
+                                                    />
+                                                    <div class="number-sec more-than-3">
+                                                        10
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 style="font-size:14px; font-weight: 400;">
+                                                        Dubai
+                                                    </h6>
+                                                    <div class="demand-container">
+                                                        <p class="webkit">Culinary hotspot | History and culture | Iconic landmarks | Theme park fun | Urban adventures</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -106,6 +538,8 @@
                                                         alt=""
                                                     />English (US)</a
                                                 >
+                                            </li>
+                                            <li>
                                                 <a
                                                     class="dropdown-item"
                                                     href="#"
@@ -113,42 +547,60 @@
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
@@ -159,56 +611,78 @@
                                             </li>
                                         </ul>
                                         <ul class="d-block list-unstyled">
-                                            <a
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
@@ -219,56 +693,78 @@
                                             </li>
                                         </ul>
                                         <ul class="d-block list-unstyled">
-                                            <a
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
                                                         src="./images/united-states.png"
                                                         alt=""
                                                     />English (US)</a
-                                                ><a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
                                                     class="dropdown-item"
                                                     href="#"
                                                     ><img
@@ -281,7 +777,10 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown" id="currency-dropdown">
+                            <li
+                                class="nav-item dropdown"
+                                id="currency-dropdown"
+                            >
                                 <a
                                     class="nav-link text-dark dropdown-toggle"
                                     id="aud"
@@ -292,233 +791,318 @@
                                 >
                                     AUD
                                 </a>
-                                <div  class="dropdown-menu active" aria-labelledby="aud" id="currency-container">
+                                <div
+                                    class="dropdown-menu active"
+                                    aria-labelledby="aud"
+                                    id="currency-container"
+                                >
                                     <div id="tooltip2"></div>
                                     <h6 class="fw-bold">Popular currencies</h6>
                                     <div id="popular-currency">
                                         <ul class="d-block list-unstyled">
                                             <li>
-                                                <a class="dropdown-item active" href="#"
+                                                <a
+                                                    class="dropdown-item active"
+                                                    href="#"
                                                     >AUD Australian Dollar</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AUD Australian Dollar</a
-                                                >
-                                            </li>
-                                        </ul>
-                                        <ul class="d-block list-unstyled">
-                                            <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AUD Australian Dollar</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AUD Australian Dollar</a
                                                 >
                                             </li>
                                         </ul>
                                         <ul class="d-block list-unstyled">
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AUD Australian Dollar</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AUD Australian Dollar</a
                                                 >
                                             </li>
                                         </ul>
                                         <ul class="d-block list-unstyled">
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AUD Australian Dollar</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AUD Australian Dollar</a
+                                                >
+                                            </li>
+                                        </ul>
+                                        <ul class="d-block list-unstyled">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AUD Australian Dollar</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AUD Australian Dollar</a
                                                 >
                                             </li>
                                         </ul>
                                     </div>
 
-                                    <h6 class="fw-bold mt-3">More currencies</h6>
+                                    <h6 class="fw-bold mt-3">
+                                        More currencies
+                                    </h6>
                                     <div id="more-currency">
                                         <ul class="d-block list-unstyled">
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AED U.A.E Dirham</a
-                                                >
-                                            </li>
-                                        </ul>
-                                        <ul class="d-block list-unstyled">
-                                            <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AED U.A.E Dirham</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AED U.A.E Dirham</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AED U.A.E Dirham</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AED U.A.E Dirham</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AED U.A.E Dirham</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AED U.A.E Dirham</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#"
-                                                    >AED U.A.E Dirham</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                         </ul>
                                         <ul class="d-block list-unstyled">
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                         </ul>
                                         <ul class="d-block list-unstyled">
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#"
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AED U.A.E Dirham</a
+                                                >
+                                            </li>
+                                        </ul>
+                                        <ul class="d-block list-unstyled">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AED U.A.E Dirham</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AED U.A.E Dirham</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AED U.A.E Dirham</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AED U.A.E Dirham</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AED U.A.E Dirham</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AED U.A.E Dirham</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >AED U.A.E Dirham</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
                                                     >AED U.A.E Dirham</a
                                                 >
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="#"
@@ -544,7 +1128,7 @@
 
             <div id="hr-one"></div>
 
-            <nav class="mt-4">
+            <nav class="header-container mt-3">
                 <div class="container-fluid">
                     <div id="second-navbar">
                         <ul
@@ -557,145 +1141,339 @@
                                 >
                                 <div id="destination-container">
                                     <div id="destination-titiles">
-                                        <div class="place-name active" id="popular-destinations">
+                                        <div
+                                            class="place-name active"
+                                            id="popular-destinations"
+                                        >
                                             <div class="des-tooltip"></div>
-                                            <h6 class="py-3">Popular destinations</h6>
+                                            <h6 class="py-3">
+                                                Popular destinations
+                                            </h6>
                                         </div>
                                         <div class="place-name" id="east-asia">
                                             <div class="des-tooltip"></div>
                                             <h6>East Asia</h6>
-                                            <p><span class="me-3">Hong Kong</span>Tokyo</p>
+                                            <p>
+                                                <span class="me-3"
+                                                    >Hong Kong</span
+                                                >Tokyo
+                                            </p>
                                         </div>
-                                        <div class="place-name" id="south-east-asia">
+                                        <div
+                                            class="place-name"
+                                            id="south-east-asia"
+                                        >
                                             <div class="des-tooltip"></div>
                                             <h6>South East Asia</h6>
-                                            <p><span class="me-3">Singapore</span>Bali</p>
+                                            <p>
+                                                <span class="me-3"
+                                                    >Singapore</span
+                                                >Bali
+                                            </p>
                                         </div>
-                                        <div class="place-name" id="middle-east">
+                                        <div
+                                            class="place-name"
+                                            id="middle-east"
+                                        >
                                             <div class="des-tooltip"></div>
                                             <h6>South Asia / Middle East</h6>
-                                            <p><span class="me-3">Kathmandu</span>Dubai</p>
+                                            <p>
+                                                <span class="me-3"
+                                                    >Kathmandu</span
+                                                >Dubai
+                                            </p>
                                         </div>
                                         <div class="place-name" id="oceania">
                                             <div class="des-tooltip"></div>
                                             <h6>Oceania</h6>
-                                            <p><span class="me-3">Sydney</span>Fiji</p>
+                                            <p>
+                                                <span class="me-3">Sydney</span
+                                                >Fiji
+                                            </p>
                                         </div>
                                         <div class="place-name" id="africa">
                                             <div class="des-tooltip"></div>
                                             <h6>Europe / Africa</h6>
-                                            <p><span class="me-3">London</span>Paris</p>
+                                            <p>
+                                                <span class="me-3">London</span
+                                                >Paris
+                                            </p>
                                         </div>
-                                        <div class="place-name" id="north-america">
+                                        <div
+                                            class="place-name"
+                                            id="north-america"
+                                        >
                                             <div class="des-tooltip"></div>
                                             <h6>North America</h6>
-                                            <p><span class="me-3">New York</span>Los Angeles</p>
+                                            <p>
+                                                <span class="me-3"
+                                                    >New York</span
+                                                >Los Angeles
+                                            </p>
                                         </div>
                                     </div>
                                     <div id="destination-links">
-                                        <div class="des-place" id="popular-destinations-link">
+                                        <div
+                                            class="des-place"
+                                            id="popular-destinations-link"
+                                        >
                                             <div id="country-link-container">
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
-                                                    <p>Hong Kong</p>
-                                                </div><div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
-                                                    <p>Hong Kong</p>
-                                                </div>
-                                                <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
-                                                    <p>Hong Kong</p>
-                                                </div>
-                                                <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                                 <div class="country-link">
-                                                    <a class="d-block w-100 h-100" href="#"><img src="./images/hongkong.jpg" alt=""></a>
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
+                                                    <p>Hong Kong</p>
+                                                </div>
+                                                <div class="country-link">
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
+                                                    <p>Hong Kong</p>
+                                                </div>
+                                                <div class="country-link">
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
+                                                    <p>Hong Kong</p>
+                                                </div>
+                                                <div class="country-link">
+                                                    <a
+                                                        class="d-block w-100 h-100"
+                                                        href="#"
+                                                        ><img
+                                                            src="./images/hongkong.jpg"
+                                                            alt=""
+                                                    /></a>
                                                     <p>Hong Kong</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="des-place" id="east-asia-link">
-                                            <h6>Select a country or city to explore</h6>
+                                        <div
+                                            class="des-place"
+                                            id="east-asia-link"
+                                        >
+                                            <h6>
+                                                Select a country or city to
+                                                explore
+                                            </h6>
                                             <div class="link-container">
-                                                <h6 class="link-title"><a href="#">Hong Kong & Macau</a></h6>
+                                                <h6 class="link-title">
+                                                    <a href="#"
+                                                        >Hong Kong & Macau</a
+                                                    >
+                                                </h6>
                                                 <div class="all-links">
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
@@ -706,115 +1484,62 @@
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
                                                     <a href="#">New York</a>
-                                                    
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Taiwan</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">Taiwan</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">South Korea</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#"
+                                                            >South Korea</a
+                                                        >
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Netherlands</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">Vancouver</a>
-                                                    <a href="#">Toronto</a>
-                                                    <a href="#">Los Angeles</a>
-                                                    <a href="#">Los Angeles</a>
-                                                    <a href="#">New York</a>
-                                                    <a href="#">Los Angeles</a>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#"
+                                                            >Netherlands</a
+                                                        >
+                                                    </h6>
                                                 </div>
-                                            </div>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">Vancouver</a>
-                                                    <a href="#">Toronto</a>
-                                                </div>
-                                            </div>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">Vancouver</a>
-                                                    <a href="#">Toronto</a>
-                                                </div>
-                                            </div>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">Vancouver</a>
-                                                    <a href="#">Toronto</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="des-place" id="south-east-asia-link">
-                                            <h6>Select a country or city to explore</h6>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Singapore</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">New York</a>
-                                                    <a href="#">Los Angeles</a>
-                                                    <a href="#">New York</a>
-                                                    <a href="#">Los Angeles</a>
-                                                    <a href="#">New York</a>
-                                                    <a href="#">Los Angeles</a>
-                                                    <a href="#">New York</a>
-                                                    <a href="#">Los Angeles</a>
-                                                </div>
-                                            </div>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Thailand</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">Vancouver</a>
-                                                    <a href="#">Toronto</a>
-                                                </div>
-                                            </div>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">Vancouver</a>
-                                                    <a href="#">Toronto</a>
-                                                </div>
-                                            </div>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">Vancouver</a>
-                                                    <a href="#">Toronto</a>
-                                                </div>
-                                            </div>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
-                                                <div class="all-links">
-                                                    <a href="#">Vancouver</a>
-                                                    <a href="#">Toronto</a>
-                                                </div>
-                                            </div>
-                                            <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Netherlands</a></h6></div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
@@ -825,31 +1550,55 @@
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Malaysia</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="des-place" id="middle-east-link">
-                                            <h6>Select a country or city to explore</h6>
+                                        <div
+                                            class="des-place"
+                                            id="south-east-asia-link"
+                                        >
+                                            <h6>
+                                                Select a country or city to
+                                                explore
+                                            </h6>
                                             <div class="link-container">
-                                                <h6 class="link-title"><a href="#">Nepal</a></h6>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#"
+                                                            >Singapore</a
+                                                        >
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
@@ -859,40 +1608,60 @@
                                                     <a href="#">Los Angeles</a>
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
-                                                    <a href="#">New York</a>
-                                                    
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Bhutan</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">Thailand</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">India</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Netherlands</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#"
+                                                            >Netherlands</a
+                                                        >
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
@@ -903,31 +1672,170 @@
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">Malaysia</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="des-place" id="oceania-link">
-                                            <h6>Select a country or city to explore</h6>
+                                        <div
+                                            class="des-place"
+                                            id="middle-east-link"
+                                        >
+                                            <h6>
+                                                Select a country or city to
+                                                explore
+                                            </h6>
                                             <div class="link-container">
-                                                <h6 class="link-title"><a href="#">Australia</a></h6>
+                                                <h6 class="link-title">
+                                                    <a href="#">Nepal</a>
+                                                </h6>
+                                                <div class="all-links">
+                                                    <a href="#">New York</a>
+                                                    <a href="#">Los Angeles</a>
+                                                    <a href="#">New York</a>
+                                                    <a href="#">Los Angeles</a>
+                                                    <a href="#">New York</a>
+                                                    <a href="#">Los Angeles</a>
+                                                    <a href="#">New York</a>
+                                                    <a href="#">Los Angeles</a>
+                                                    <a href="#">New York</a>
+                                                </div>
+                                            </div>
+                                            <div class="link-container">
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">Bhutan</a>
+                                                    </h6>
+                                                </div>
+                                                <div class="all-links">
+                                                    <a href="#">Vancouver</a>
+                                                    <a href="#">Toronto</a>
+                                                </div>
+                                            </div>
+                                            <div class="link-container">
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">India</a>
+                                                    </h6>
+                                                </div>
+                                                <div class="all-links">
+                                                    <a href="#">Vancouver</a>
+                                                    <a href="#">Toronto</a>
+                                                </div>
+                                            </div>
+                                            <div class="link-container">
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
+                                                <div class="all-links">
+                                                    <a href="#">Vancouver</a>
+                                                    <a href="#">Toronto</a>
+                                                </div>
+                                            </div>
+                                            <div class="link-container">
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
+                                                <div class="all-links">
+                                                    <a href="#">Vancouver</a>
+                                                    <a href="#">Toronto</a>
+                                                </div>
+                                            </div>
+                                            <div class="link-container">
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#"
+                                                            >Netherlands</a
+                                                        >
+                                                    </h6>
+                                                </div>
+                                                <div class="all-links">
+                                                    <a href="#">Vancouver</a>
+                                                    <a href="#">Toronto</a>
+                                                    <a href="#">Los Angeles</a>
+                                                    <a href="#">Los Angeles</a>
+                                                    <a href="#">New York</a>
+                                                    <a href="#">Los Angeles</a>
+                                                </div>
+                                            </div>
+                                            <div class="link-container">
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
+                                                <div class="all-links">
+                                                    <a href="#">Vancouver</a>
+                                                    <a href="#">Toronto</a>
+                                                </div>
+                                            </div>
+                                            <div class="link-container">
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
+                                                <div class="all-links">
+                                                    <a href="#">Vancouver</a>
+                                                    <a href="#">Toronto</a>
+                                                </div>
+                                            </div>
+                                            <div class="link-container">
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
+                                                <div class="all-links">
+                                                    <a href="#">Vancouver</a>
+                                                    <a href="#">Toronto</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="des-place"
+                                            id="oceania-link"
+                                        >
+                                            <h6>
+                                                Select a country or city to
+                                                explore
+                                            </h6>
+                                            <div class="link-container">
+                                                <h6 class="link-title">
+                                                    <a href="#">Australia</a>
+                                                </h6>
                                                 <div class="all-links">
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
@@ -959,11 +1867,16 @@
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
                                                     <a href="#">New York</a>
-                                                    
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">New Zealand</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#"
+                                                            >New Zealand</a
+                                                        >
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
@@ -974,16 +1887,27 @@
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Fiji</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">Fiji</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Fiji</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="des-place" id="africa-link">
-                                            <h6>Select a country or city to explore</h6>
+                                            <h6>
+                                                Select a country or city to
+                                                explore
+                                            </h6>
                                             <div class="link-container">
-                                                <h6 class="link-title"><a href="#">United Kingdom</a></h6>
+                                                <h6 class="link-title">
+                                                    <a href="#"
+                                                        >United Kingdom</a
+                                                    >
+                                                </h6>
                                                 <div class="all-links">
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
@@ -994,39 +1918,62 @@
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
                                                     <a href="#">New York</a>
-                                                    
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Netherlands</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#"
+                                                            >Netherlands</a
+                                                        >
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Netherlands</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#"
+                                                            >Netherlands</a
+                                                        >
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
@@ -1037,31 +1984,53 @@
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">France</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">France</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="des-place"  id="north-america-link">
-                                            <h6>Select a country or city to explore</h6>
+                                        <div
+                                            class="des-place"
+                                            id="north-america-link"
+                                        >
+                                            <h6>
+                                                Select a country or city to
+                                                explore
+                                            </h6>
                                             <div class="link-container">
-                                                <h6 class="link-title"><a href="#">United States</a></h6>
+                                                <h6 class="link-title">
+                                                    <a href="#"
+                                                        >United States</a
+                                                    >
+                                                </h6>
                                                 <div class="all-links">
                                                     <a href="#">New York</a>
                                                     <a href="#">Los Angeles</a>
@@ -1079,7 +2048,11 @@
                                                 </div>
                                             </div>
                                             <div class="link-container">
-                                                <div class="link-title"><h6><a href="#">Canada</a></h6></div>
+                                                <div class="link-title">
+                                                    <h6>
+                                                        <a href="#">Canada</a>
+                                                    </h6>
+                                                </div>
                                                 <div class="all-links">
                                                     <a href="#">Vancouver</a>
                                                     <a href="#">Toronto</a>
@@ -1096,57 +2069,255 @@
                                 <div id="all-categories-container">
                                     <div id="list-container">
                                         <div class="categories">
-                                            <img src="./images/parachute.png" alt="">
+                                            <img
+                                                src="./images/parachute.png"
+                                                alt=""
+                                            />
                                             <div class="common-dropdown">
-                                                <ul class="d-block list-unstyled">
-                                                    <li class="nav-item ms-3">Things to do</li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Attractions &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Tours &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Outdoors & adventures &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Water activities &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Cultural experience &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Travel passes &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Travel passesCruise &nbsp;&gt;</a></li>
+                                                <ul
+                                                    class="d-block list-unstyled"
+                                                >
+                                                    <li class="nav-item ms-3">
+                                                        Things to do
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Attractions
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Tours &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Outdoors &
+                                                            adventures
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Water activities
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Cultural experience
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Travel passes
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Travel passesCruise
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="categories">
-                                            <img src="./images/home.png" alt="">
+                                            <img
+                                                src="./images/home.png"
+                                                alt=""
+                                            />
                                             <div class="common-dropdown">
-                                                <ul class="d-block list-unstyled">
-                                                    <li class="nav-item ms-3">Places to stay</li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Hotels &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Staycations &nbsp;&gt;</a></li>
+                                                <ul
+                                                    class="d-block list-unstyled"
+                                                >
+                                                    <li class="nav-item ms-3">
+                                                        Places to stay
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Hotels
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Staycations
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="categories">
-                                            <img src="./images/train.png" alt="">
+                                            <img
+                                                src="./images/train.png"
+                                                alt=""
+                                            />
                                             <div class="common-dropdown">
-                                                <ul class="d-block list-unstyled">
-                                                    <li class="nav-item ms-3">Transport</li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Train tickets &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Japan trains &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Japan rail passes &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Europe rail passes &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Ferries &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Private airport transfer &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Airport trains & buses &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Buses &nbsp;&gt;</a></li>
+                                                <ul
+                                                    class="d-block list-unstyled"
+                                                >
+                                                    <li class="nav-item ms-3">
+                                                        Transport
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Train tickets
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Japan trains
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Japan rail passes
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Europe rail passes
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Ferries
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Private airport
+                                                            transfer
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Airport trains &
+                                                            buses &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Buses &nbsp;&gt;</a
+                                                        >
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="categories">
-                                            <img src="./images/more.png" alt="">
+                                            <img
+                                                src="./images/more.png"
+                                                alt=""
+                                            />
                                             <div class="common-dropdown">
-                                                <ul class="d-block list-unstyled">
-                                                    <li class="nav-item ms-3">More to explore</li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#" style="font-weight: 600 !important;">Events & shows &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#" style="font-weight: 600 !important;">Food & dining &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#" style="font-weight: 600 !important;">More to explore &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Gear rental &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Travel services &nbsp;&gt;</a></li>
-                                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Wifi & SIM cards &nbsp;&gt;</a></li>
+                                                <ul
+                                                    class="d-block list-unstyled"
+                                                >
+                                                    <li class="nav-item ms-3">
+                                                        More to explore
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            style="
+                                                                font-weight: 600 !important;
+                                                            "
+                                                            >Events & shows
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            style="
+                                                                font-weight: 600 !important;
+                                                            "
+                                                            >Food & dining
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            style="
+                                                                font-weight: 600 !important;
+                                                            "
+                                                            >More to explore
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Gear rental
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Travel services
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link text-dark"
+                                                            href="#"
+                                                            >Wifi & SIM cards
+                                                            &nbsp;&gt;</a
+                                                        >
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1159,13 +2330,55 @@
                                 >
                                 <div class="common-dropdown" id="things-to-do">
                                     <ul class="d-block list-unstyled">
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Attractions</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Tours</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Outdoors & adventures</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Water activities</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Cultural experience</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Travel passes</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Travel passesCruise</a></li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Attractions</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Tours</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Outdoors & adventures</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Water activities</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Cultural experience</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Travel passes</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Travel passesCruise</a
+                                            >
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -1173,10 +2386,25 @@
                                 <a class="nav-link text-dark" href="#"
                                     >Places to stay</a
                                 >
-                                <div class="common-dropdown" id="places-to-stay">
+                                <div
+                                    class="common-dropdown"
+                                    id="places-to-stay"
+                                >
                                     <ul class="d-block list-unstyled">
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Hotels</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Staycations</a></li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Hotels</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Staycations</a
+                                            >
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -1186,14 +2414,62 @@
                                 >
                                 <div class="common-dropdown" id="transport">
                                     <ul class="d-block list-unstyled">
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Train tickets</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Japan trains</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Japan rail passes</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Europe rail passes</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Ferries</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Private airport transfer</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Airport trains & buses</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Buses</a></li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Train tickets</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Japan trains</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Japan rail passes</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Europe rail passes</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Ferries</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Private airport transfer</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Airport trains & buses</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Buses</a
+                                            >
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -1201,22 +2477,90 @@
                                 <a class="nav-link text-dark" href="#">Cars</a>
                                 <div class="common-dropdown" id="cars">
                                     <ul class="d-block list-unstyled">
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Car charters</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Car rentals</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Scooters & bikes</a></li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Car charters</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Car rentals</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Scooters & bikes</a
+                                            >
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item" id="dot-nav">
-                                <a class="nav-link text-dark" href="#" id="dot">...</a>
-                                <div class="common-dropdown" id="dots-container">
+                                <a class="nav-link text-dark" href="#" id="dot"
+                                    >...</a
+                                >
+                                <div
+                                    class="common-dropdown"
+                                    id="dots-container"
+                                >
                                     <ul class="d-block list-unstyled">
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#" style="font-weight: 600 !important;">Events & shows</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#" style="font-weight: 600 !important;">Food & dining</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#" style="font-weight: 600 !important;">More to explore</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Gear rental</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Travel services</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark" href="#">Wifi & SIM cards</a></li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                style="
+                                                    font-weight: 600 !important;
+                                                "
+                                                >Events & shows</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                style="
+                                                    font-weight: 600 !important;
+                                                "
+                                                >Food & dining</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                style="
+                                                    font-weight: 600 !important;
+                                                "
+                                                >More to explore</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Gear rental</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Travel services</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                class="nav-link text-dark"
+                                                href="#"
+                                                >Wifi & SIM cards</a
+                                            >
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -1243,14 +2587,20 @@
 
             <!-- slider -->
             <div id="slider-container">
-                <div id="slider-header">
-                    <h1 class="fw-bolder" style="font-size: 50px">
+                <div class="header-container" id="slider-header">
+                    <h1 style="font-size: 60px; font-weight: 600">
                         Your World of Joy
                     </h1>
-                    <p class="fs-5 fw-bold">
+                    <h2
+                        style="
+                            font-size: 20px;
+                            font-weight: 400;
+                            margin-bottom: 20px;
+                        "
+                    >
                         From local escapes to far-flung adventures, find what
                         makes you happy anytime, anywhere
-                    </p>
+                    </h2>
                     <div id="search-container2">
                         <form>
                             <img

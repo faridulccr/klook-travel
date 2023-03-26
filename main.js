@@ -4,16 +4,23 @@ const placeName = document.querySelectorAll(".place-name");
 const desPlace = document.querySelectorAll(".des-place");
 placeName.forEach((item) => {
     item.addEventListener("mouseenter", (e) => {
+        const id = e.target.id;
         // remove active class
         placeName.forEach((value) => {
-            value.classList.remove("active");
+            if (id === value.id) {
+                value.classList.add("active");
+            } else {
+                value.classList.remove("active");
+            }
         });
-        e.target.classList.add("active");
 
         // hidden all links
         desPlace.forEach((value) => {
-            value.style.display = "none";
+            if (`${id}-link` === value.id) {
+                value.style.display = "block";
+            } else {
+                value.style.display = "none";
+            }
         });
-        document.getElementById(`${e.target.id}-link`).style.display = "block";
     });
 });
