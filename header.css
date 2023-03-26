@@ -241,6 +241,10 @@ header #slider-container #slider-header {
     color: white;
 }
 
+#search-container2 {
+    /* border: 1px solid black; */
+    width: fit-content;
+}
 #search-container2 #magnify {
     width: 30px;
     height: 30px;
